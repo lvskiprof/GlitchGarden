@@ -41,3 +41,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Sprites
+    uniqueID: 1395872907
+    locked: 0
+  - name: Trees
+    uniqueID: 2973629361
+    locked: 0

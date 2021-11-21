@@ -28,13 +28,6 @@ public class LevelLoader : MonoBehaviour
     }   // Start()
 
     /***
-     *      Load the Starting Scene when we display our first frame.
-     ***/
-    void Update()
-    {
-    }   // Update()
-
-    /***
      *      Delay for the length it takes for our sound clip to play and then load the Start Game scene.
      ***/
     private void StartGame()
@@ -47,9 +40,9 @@ public class LevelLoader : MonoBehaviour
      ***/
     IEnumerator WaitForTime(int delay)
     {
-        Debug.Log("Delaying for " + delay + " seconds");
+        //Debug.Log("Delaying for " + delay + " seconds");
         yield return new WaitForSeconds(delay);
-        Debug.Log("Calling LoadNextScene()");
+        //Debug.Log("Calling LoadNextScene()");
         LoadNextScene();
     }   // WaitForTime()
 
@@ -59,7 +52,7 @@ public class LevelLoader : MonoBehaviour
     public void LoadNextScene()
 	{
         currentSceneIndex++;
-        Debug.Log("New scene index will be: " + currentSceneIndex);
+        //Debug.Log("New scene index will be: " + currentSceneIndex);
         SceneManager.LoadScene(currentSceneIndex);
 	}   // LoadNextScene()
 }   // class LevelLoader
